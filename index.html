@@ -46,8 +46,8 @@
     header {
       background: var(--white);
       border-bottom: 1px solid var(--orchid-light);
-      padding: 0 5vw;
-      height: 64px;
+      padding: 15px 5vw;
+      min-height: 80px;
       display: flex; align-items: center; justify-content: space-between;
       box-shadow: 0 2px 12px rgba(98,68,130,.07);
       flex-shrink: 0;
@@ -55,6 +55,11 @@
     .logo {
       display: flex; align-items: center; gap: 10px;
       text-decoration: none; color: var(--purple-deep);
+    }
+    .logo img {
+      height: 110px;
+      width: auto;
+      max-width: 100%;
     }
     .logo-mark {
       width: 36px; height: 36px; border-radius: 10px;
@@ -287,9 +292,8 @@
       .info-grid { grid-template-columns: 1fr; gap: 10px; }
     }
     @media (max-width: 600px) {
-      header { padding: 0 4vw; height: 56px; }
-      .logo-text { font-size: .85rem; }
-      .logo-mark { width: 32px; height: 32px; font-size: 1rem; }
+      header { padding: 12px 4vw; min-height: 60px; }
+      .logo img { height: 70px; }
       .status-badge { font-size: .68rem; padding: 4px 10px; }
       main { padding: 20px 4vw; }
       h1 { font-size: 1.6rem; }
@@ -331,7 +335,7 @@
   <!-- Header -->
   <header role="banner">
     <a href="https://www.ghpediatrics.com" class="logo" aria-label="Greater Hartford Pediatrics Home">
-      <img src="icon_brand_horizontal.png" alt="Greater Hartford Pediatrics" style="height: 110px; width: auto;" />
+      <img src="icon_brand_horizontal.png" alt="Greater Hartford Pediatrics" />
     </a>
     <div class="status-badge" role="status" aria-label="Practice opening status">Opening 2026</div>
   </header>
