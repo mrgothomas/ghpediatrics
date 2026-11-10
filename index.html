@@ -1,451 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Greater Hartford Pediatrics — Opening 2026 | Compassionate Care for Children</title>
-  <meta name="description" content="Greater Hartford Pediatrics is a new pediatric practice opening in 2026, providing comprehensive, compassionate care for children from newborn to age 21.">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --white:        #FFFFFF;
-      --off-white:    #FCFBFD;
-      --orchid-light: #E7E4E9;
-      --orchid:       #D6C5DE;
-      --lavender:     #DDCEE3;
-      --purple:       #BDA2CA;
-      --purple-dark:  #7a5c96;
-      --purple-deep:  #4e3663;
-      --text:         #3d2b4e;
-      --text-muted:   #7a6e88;
-      --font: 'Calibri', 'Nunito', 'Segoe UI', system-ui, sans-serif;
-    }
-
-    html, body { height: 100%; }
-    body {
-      font-family: var(--font);
-      background: linear-gradient(165deg, var(--off-white) 0%, var(--orchid-light) 100%);
-      color: var(--text);
-      line-height: 1.5;
-      display: flex; flex-direction: column;
-      overflow: hidden;
-    }
-
-    /* Skip to main content for screen readers */
-    .skip-link {
-      position: absolute; top: -40px; left: 0;
-      background: var(--purple-deep); color: #fff;
-      padding: 8px 16px; text-decoration: none;
-      z-index: 1000; border-radius: 0 0 4px 0;
-    }
-    .skip-link:focus { top: 0; outline: 3px solid var(--purple); }
-
-    /* Header */
-    header {
-      background: var(--white);
-      border-bottom: 1px solid var(--orchid-light);
-      padding: 15px 5vw;
-      min-height: 80px;
-      display: flex; align-items: center; justify-content: space-between;
-      box-shadow: 0 2px 12px rgba(98,68,130,.07);
-      flex-shrink: 0;
-    }
-    .logo {
-      display: flex; align-items: center; gap: 10px;
-      text-decoration: none; color: var(--purple-deep);
-    }
-    .logo img {
-      height: 110px;
-      width: auto;
-      max-width: 100%;
-    }
-    .logo-mark {
-      width: 36px; height: 36px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--purple), var(--purple-dark));
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.2rem; flex-shrink: 0;
-      box-shadow: 0 3px 10px rgba(98,68,130,.2);
-    }
-    .logo-text { font-size: .95rem; font-weight: 800; line-height: 1.2; }
-    .logo-sub { display: block; font-size: .7rem; color: var(--text-muted); font-weight: 400; }
-    .status-badge {
-      background: var(--lavender); color: var(--purple-dark);
-      padding: 5px 14px; border-radius: 20px;
-      font-size: .75rem; font-weight: 700; letter-spacing: .04em;
-      text-transform: uppercase;
-    }
-
-    /* Main content */
-    main {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      padding: 0 5vw;
-      gap: 48px;
-      position: relative;
-      overflow: hidden;
-    }
-    main::before {
-      content: '';
-      position: absolute; top: -80px; left: -80px;
-      width: 400px; height: 400px; border-radius: 50%;
-      background: radial-gradient(circle, var(--lavender) 0%, transparent 60%);
-      opacity: .4; pointer-events: none;
-    }
-
-    /* Content section */
-    .content { position: relative; z-index: 1; }
-    .chip {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--white);
-      border: 1px solid var(--orchid);
-      color: var(--purple-dark);
-      padding: 6px 16px; border-radius: 20px;
-      font-size: .75rem; font-weight: 700; letter-spacing: .04em;
-      text-transform: uppercase; margin-bottom: 16px;
-      box-shadow: 0 2px 8px rgba(98,68,130,.1);
-    }
-    h1 {
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      font-weight: 800; line-height: 1.15;
-      color: var(--purple-deep);
-      margin-bottom: 14px;
-    }
-    h1 .highlight { color: var(--purple-dark); }
-    .tagline {
-      font-size: 1rem; color: var(--text-muted);
-      max-width: 480px; margin-bottom: 24px;
-      line-height: 1.7;
-    }
-
-    /* Info grid */
-    .info-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-    .info-item {
-      background: var(--white);
-      border: 1px solid var(--orchid);
-      border-radius: 12px;
-      padding: 12px 14px;
-      display: flex; align-items: center; gap: 10px;
-      box-shadow: 0 2px 8px rgba(98,68,130,.08);
-    }
-    .info-icon {
-      width: 32px; height: 32px; border-radius: 8px;
-      background: var(--lavender);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1rem; flex-shrink: 0;
-    }
-    .info-item .text { flex: 1; }
-    .info-item strong {
-      display: block; font-size: .8rem; font-weight: 700;
-      color: var(--purple-deep); line-height: 1.2;
-    }
-    .info-item span {
-      display: block; font-size: .7rem;
-      color: var(--text-muted); line-height: 1.3;
-    }
-    .info-item a {
-      color: var(--purple-dark);
-      text-decoration: none;
-      transition: color .2s;
-    }
-    .info-item a:hover { color: var(--purple-deep); text-decoration: underline; }
-    .info-item a:focus { outline: 2px solid var(--purple); outline-offset: 2px; }
-
-    /* CTA */
-    .cta-buttons {
-      display: flex; gap: 12px; flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 24px; border-radius: 10px;
-      font-family: var(--font); font-size: .9rem; font-weight: 700;
-      border: none; cursor: pointer;
-      text-decoration: none;
-      transition: transform .15s, box-shadow .2s, background .2s, border-color .2s;
-    }
-    .btn:focus-visible { outline: 3px solid var(--purple); outline-offset: 3px; }
-    .btn:active { transform: translateY(0); }
-    .btn-primary {
-      background: linear-gradient(135deg, var(--purple), var(--purple-dark));
-      color: #fff;
-      box-shadow: 0 4px 16px rgba(98,68,130,.3);
-    }
-    .btn-primary:hover {
-      background: linear-gradient(135deg, var(--purple-dark), var(--purple-deep));
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(98,68,130,.35);
-    }
-    .btn-secondary {
-      background: var(--white);
-      color: var(--purple-dark);
-      border: 2px solid var(--orchid);
-    }
-    .btn-secondary:hover {
-      border-color: var(--purple);
-      background: var(--orchid-light);
-      transform: translateY(-2px);
-    }
-
-    /* Visual section */
-    .visual {
-      position: relative; z-index: 1;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .visual-card {
-      background: var(--white);
-      border-radius: 24px;
-      padding: 32px;
-      text-align: center;
-      max-width: 380px;
-      box-shadow: 0 16px 64px rgba(98,68,130,.16);
-      border: 1px solid var(--orchid);
-    }
-    .icon-large {
-      font-size: 4.5rem;
-      line-height: 1;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 4px 8px rgba(0,0,0,.08));
-    }
-    .visual-card h2 {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: var(--purple-deep);
-      margin-bottom: 6px;
-      line-height: 1.2;
-    }
-    .visual-card .subtitle {
-      font-size: .95rem;
-      font-weight: 600;
-      color: var(--purple-dark);
-      margin-bottom: 14px;
-      line-height: 1.3;
-    }
-    .visual-card p {
-      font-size: .88rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    .feature-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      text-align: left;
-    }
-    .feature-list li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: .8rem;
-      color: var(--text-muted);
-    }
-    .check {
-      width: 18px; height: 18px;
-      background: var(--lavender);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      color: var(--purple-dark);
-      font-size: .65rem;
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-
-    /* Footer */
-    footer {
-      background: var(--purple-deep);
-      color: rgba(255,255,255,.6);
-      padding: 12px 5vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: .75rem;
-      flex-shrink: 0;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    footer a {
-      color: rgba(255,255,255,.8);
-      text-decoration: none;
-      transition: color .2s;
-    }
-    footer a:hover { color: #fff; }
-    footer a:focus { outline: 2px solid var(--purple); outline-offset: 2px; }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      body { overflow: auto; }
-      main {
-        grid-template-columns: 1fr;
-        padding: 24px 5vw;
-        gap: 32px;
-        overflow: visible;
-      }
-      .visual { display: none; }
-      h1 { font-size: 2rem; }
-      .info-grid { grid-template-columns: 1fr; gap: 10px; }
-    }
-    @media (max-width: 600px) {
-      header { padding: 12px 4vw; min-height: 60px; }
-      .logo img { height: 70px; }
-      .status-badge { font-size: .68rem; padding: 4px 10px; }
-      main { padding: 20px 4vw; }
-      h1 { font-size: 1.6rem; }
-      .tagline { font-size: .9rem; }
-      .cta-buttons { flex-direction: column; }
-      .btn { width: 100%; justify-content: center; }
-      footer { font-size: .7rem; padding: 10px 4vw; }
-    }
-
-    /* Focus management for accessibility */
-    *:focus-visible {
-      outline: 2px solid var(--purple);
-      outline-offset: 2px;
-    }
-
-    /* Ensure sufficient contrast */
-    @media (prefers-contrast: high) {
-      :root {
-        --text: #000;
-        --text-muted: #3d2b4e;
-        --purple-deep: #2d1a3e;
-      }
-    }
-
-    /* Reduced motion support */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Greater Hartford Pediatrics | Pediatrician in Wethersfield, CT</title>
+<meta name="description" content="Greater Hartford Pediatrics, 465 Silas Deane Highway, Wethersfield, CT. Compassionate pediatric care for children from newborn through age 21. Call 860-865-3521." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 </head>
 <body>
-  <!-- Skip to main content link for keyboard navigation -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+<a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- Header -->
-  <header role="banner">
-    <a href="https://www.ghpediatrics.com" class="logo" aria-label="Greater Hartford Pediatrics Home">
-      <img src="icon_brand_horizontal.png" alt="Greater Hartford Pediatrics" />
+<!-- ══ NAV ══════════════════════════════════ -->
+<nav class="site-nav" aria-label="Main">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand" aria-label="Greater Hartford Pediatrics home">
+      <img src="images/logo-horizontal.png" alt="Greater Hartford Pediatrics" />
     </a>
-    <div class="status-badge" role="status" aria-label="Practice opening status">Opening 2026</div>
-  </header>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="https://portal.letsdevelo.com/ghpediatrics" class="portal-link" target="_blank" rel="noopener noreferrer">Patient Portal</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- Main content -->
-  <main id="main-content" role="main">
-    <div class="content">
-      <div class="chip" role="status">
-        <span aria-hidden="true">🌸</span>
-        <span>Now Accepting Pre-Registration</span>
-      </div>
+<main id="main">
+<section id="page-home" data-page="home" aria-label="Home">
 
-      <h1>
-        Exceptional Pediatric Care<br>
-        <span class="highlight">Coming to Greater Hartford</span>
-      </h1>
-
-      <p class="tagline">
-        A warm, modern pediatric practice dedicated to the health and happiness of your children — from newborns to young adults. Opening Winter 2026.
+  <div class="hero hero-split">
+    <div class="hero-inner">
+      <div>
+      <div class="hero-chip"><span aria-hidden="true">🌸</span> Now accepting pre-registration</div>
+      <h1>Exceptional Pediatric Care <span>for Greater Hartford Families</span></h1>
+      <p class="hero-sub">
+        A warm, welcoming, independent pediatric practice dedicated to the health and happiness of your children, from newborns through young adults. Opening before the end of 2026.
       </p>
-
-      <!-- Information grid -->
-      <div class="info-grid">
-        <div class="info-item">
-          <div class="info-icon" aria-hidden="true">🌐</div>
-          <div class="text">
-            <strong>Website</strong>
-            <span><a href="https://www.ghpediatrics.com">www.ghpediatrics.com</a></span>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon" aria-hidden="true">📧</div>
-          <div class="text">
-            <strong>Email</strong>
-            <span><a href="mailto:info@ghpediatrics.com">info@ghpediatrics.com</a></span>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon" aria-hidden="true">📍</div>
-          <div class="text">
-            <strong>Location</strong>
-            <span>Greater Hartford, CT</span>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon" aria-hidden="true">🩺</div>
-          <div class="text">
-            <strong>Ages Served</strong>
-            <span>Newborn to 21 Years</span>
-          </div>
-        </div>
+      <div class="btn-row">
+        <a href="https://forms.gle/T2b1rYKg3tCvn9UZ8" target="_blank" rel="noopener noreferrer" class="btn btn-primary">📩 Pre-Register Your Family</a>
+        <a href="https://portal.letsdevelo.com/ghpediatrics" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Open Patient Portal</a>
       </div>
-
-      <!-- Call to action -->
-      <div class="cta-buttons">
-        <a href="https://forms.gle/T2b1rYKg3tCvn9UZ8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Pre-register your family">
-          <span aria-hidden="true">📩</span>
-          Pre-Register Your Family
-        </a>
-        <a href="mailto:info@ghpediatrics.com" class="btn btn-secondary" aria-label="Contact us via email">
-          Contact Us
-        </a>
+      </div>
+      <div class="hero-photo">
+        <img src="images/office-waiting-room.jpg" alt="The bright, welcoming waiting room at Greater Hartford Pediatrics, with a welcome screen and front desk" />
+        <div class="about-float">
+          <div class="af-icon" aria-hidden="true">👋</div>
+          <div><strong>Welcome, we’re glad you’re here</strong><span>465 Silas Deane Hwy, Wethersfield</span></div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Visual card -->
-    <div class="visual">
-      <div class="visual-card">
-        <img src="logo.png" alt="Greater Hartford Pediatrics Logo" style="width: 160px; height: auto; margin-bottom: 20px; filter: drop-shadow(0 4px 8px rgba(0,0,0,.08));" />
-        <h2>Dr. Latesha Thomas</h2>
-        <p class="subtitle">Board-Certified Pediatrician</p>
-        <p>Comprehensive services for your child's complete health and wellness</p>
-        <ul class="feature-list">
-          <li><span class="check" aria-hidden="true">✓</span> <span>Well-Child Visits & Immunizations</span></li>
-          <li><span class="check" aria-hidden="true">✓</span> <span>Same-Day Sick Appointments</span></li>
-          <li><span class="check" aria-hidden="true">✓</span> <span>Developmental Screenings</span></li>
-          <li><span class="check" aria-hidden="true">✓</span> <span>Telehealth Services Available</span></li>
-          <li><span class="check" aria-hidden="true">✓</span> <span>Most Insurance Accepted</span></li>
-        </ul>
+  <div class="opening-strip">
+    <div class="os-item"><strong>Newborn–21</strong><span>Ages we care for</span></div>
+    <div class="os-divider"></div>
+    <div class="os-item"><strong>Board-Certified</strong><span>Pediatrician</span></div>
+    <div class="os-divider"></div>
+    <div class="os-item"><strong>18+ Years</strong><span>Caring for children</span></div>
+    <div class="os-divider"></div>
+    <div class="os-item"><strong>Wethersfield, CT</strong><span>Serving Greater Hartford</span></div>
+    <div class="os-divider"></div>
+    <div class="os-item"><strong>HUSKY &amp; Major Plans</strong><span>Insurance accepted</span></div>
+  </div>
+
+  <div class="about">
+    <div class="about-visual">
+      <div class="about-blob photo">
+        <img src="images/office-front-desk.jpg" alt="Our front desk and kid-sized play table" />
+      </div>
+      <div class="about-float">
+        <div class="af-icon" aria-hidden="true">💜</div>
+        <div>
+          <strong>Family-Centered Care</strong>
+          <span>Your child’s wellbeing is our mission</span>
+        </div>
       </div>
     </div>
-  </main>
+    <div class="about-content">
+      <span class="section-label">About our practice</span>
+      <h2>A Practice Built Around Your Child’s Best Health</h2>
+      <p>Greater Hartford Pediatrics is an independent pediatric practice committed to compassionate, culturally sensitive, whole-child care. Every child deserves personal attention and a physician who truly knows them and their family.</p>
+      <p>Our mission is to give every child in the Greater Hartford community the healthiest possible start, meeting families where they are.</p>
+      <ul class="about-list">
+        <li><span class="check" aria-hidden="true">✓</span> Board-certified pediatrician with more than 18 years of experience</li>
+        <li><span class="check" aria-hidden="true">✓</span> Caring for newborns through young adults (0–21 years)</li>
+        <li><span class="check" aria-hidden="true">✓</span> Same-day and next-day sick visit appointments</li>
+        <li><span class="check" aria-hidden="true">✓</span> Telehealth visits available</li>
+        <li><span class="check" aria-hidden="true">✓</span> Most major insurance plans accepted, including HUSKY/Medicaid</li>
+      </ul>
+      <a href="about.html" class="btn btn-secondary">Meet our team</a>
+    </div>
+  </div>
 
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <span>&copy; 2026 Greater Hartford Pediatrics. All rights reserved.</span>
-    <nav aria-label="Footer navigation">
-      <a href="mailto:info@ghpediatrics.com">Contact</a>
-      <span aria-hidden="true">•</span>
-      <a href="#privacy">Privacy Policy</a>
-      <span aria-hidden="true">•</span>
-      <a href="#accessibility">Accessibility</a>
+
+  <section class="gallery" aria-labelledby="gallery-title">
+    <div class="section-header">
+      <span class="section-label">Step inside</span>
+      <h2 id="gallery-title">A Space Made for Kids and Families</h2>
+      <p>From the play table in our waiting room to our care team’s station, every corner of our office was set up to help children feel at ease.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure><img src="images/office-front-desk.jpg" alt="Kid-sized table and toys beside the front desk" style="object-position: 28% 50%;" /><figcaption><strong>A friendly hello</strong><span>Our front desk team greets every family, and little ones can play while they wait.</span></figcaption></figure>
+      <figure><img src="images/office-waiting-room.jpg" alt="Waiting room with comfortable seating" style="object-position: 72% 50%;" /><figcaption><strong>Room to relax</strong><span>A calm, comfortable waiting area for parents, siblings, and grandparents.</span></figcaption></figure>
+      <figure><img src="images/office-care-station.jpg" alt="Care team station with height scale and vision chart" style="object-position: 45% 50%;" /><figcaption><strong>Our care team’s home base</strong><span>Where our medical assistants check growth, vision, and vitals with a gentle touch.</span></figcaption></figure>
+    </div>
+  </section>
+  <section class="services" style="background: var(--surface);">
+    <div class="section-header">
+      <span class="section-label">What we provide</span>
+      <h2>Comprehensive Pediatric Services</h2>
+      <p>Everything your child needs, from their very first well visit through the teen and young adult years, in one caring practice.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">📋</div><h3>Well-Child Visits</h3><p>Regular check-ups with growth monitoring, developmental screening, and preventive guidance at every stage.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">🤒</div><h3>Sick Visits</h3><p>Same-day and next-day appointments for illness, infections, minor injuries, and urgent concerns.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">💉</div><h3>Immunizations</h3><p>The full recommended vaccine schedule and seasonal flu shots to keep your child protected.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">🌙</div><h3>Newborn Care</h3><p>Early newborn visits, feeding and breastfeeding support, and guidance for new families.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">🧠</div><h3>Developmental Screenings</h3><p>Early identification of developmental delays, autism concerns, learning differences, and behavioral needs.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">🌬️</div><h3>Asthma Care</h3><p>Personalized asthma action plans, inhaler teaching, trigger counseling, and coordination with school nurses.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">🥗</div><h3>Healthy Weight &amp; Nutrition</h3><p>Supportive, family-based care for healthy growth, nutrition, and physical activity.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">💬</div><h3>Behavioral &amp; Mental Health</h3><p>Screening and care for ADHD, anxiety, and depression, with connections to counseling when needed.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">🤝</div><h3>Adolescent Medicine</h3><p>Confidential, respectful care for teens and young adults, including support for the transition to adult care.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">🏃</div><h3>Sports &amp; School Physicals</h3><p>School, camp, and sports clearance physicals to keep your child active and ready.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">💻</div><h3>Telehealth Visits</h3><p>Video appointments for follow-ups, medication checks, and non-urgent questions.</p></div>
+      <div class="svc-card"><div class="svc-icon" aria-hidden="true">🏥</div><h3>Specialist Coordination</h3><p>Referrals to and follow-up with Connecticut Children’s specialists when your child needs extra care.</p></div>
+    </div>
+  </section>
+
+  <section class="services" style="padding-top: 72px; padding-bottom: 0;" aria-label="Patient portal">
+    <div class="portal-band" style="padding: 0;">
+      <div class="portal-card">
+        <div>
+          <h2>Patient Portal</h2>
+          <p>Message our office, request appointments, and view your child’s health information securely online.</p>
+        </div>
+        <a href="https://portal.letsdevelo.com/ghpediatrics" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Patient Portal</a>
+      </div>
+    </div>
+  </section>
+  <div style="height: 80px;"></div>
+
+  <section class="contact-cta">
+    <h2>Join Our Practice Family</h2>
+    <p>Pre-register your family today to receive priority scheduling when our doors open.</p>
+    <div class="btn-row">
+      <a href="https://forms.gle/T2b1rYKg3tCvn9UZ8" target="_blank" rel="noopener noreferrer" class="btn btn-white-solid">📩 Pre-Register Your Family</a>
+      <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
+    </div>
+  </section>
+</section>
+</main>
+
+<!-- ══ FOOTER ══════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <strong>Greater Hartford Pediatrics</strong>
+      <span>Compassionate pediatric care for Greater Hartford families</span>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="https://portal.letsdevelo.com/ghpediatrics" target="_blank" rel="noopener noreferrer">Patient Portal</a>
     </nav>
-  </footer>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Greater Hartford Pediatrics. All rights reserved.</span>
+    <span>465 Silas Deane Highway, Wethersfield, CT 06109 &nbsp;|&nbsp; Phone: <a href="tel:+18608653521" style="color:rgba(255,255,255,.85);">860-865-3521</a> &nbsp;|&nbsp; Fax: 860-865-3596</span>
+  </div>
+</footer>
 
-  <script>
-    // Form validation for email links (accessibility enhancement)
-    document.addEventListener('DOMContentLoaded', function() {
-      // Announce dynamic content to screen readers
-      const statusBadge = document.querySelector('[role="status"]');
-      if (statusBadge) {
-        statusBadge.setAttribute('aria-live', 'polite');
-      }
+
+<script>
+  (function () {
+    var links = document.getElementById('nav-links');
+    var toggle = document.querySelector('.menu-toggle');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-  </script>
+  })();
+</script>
 </body>
 </html>
