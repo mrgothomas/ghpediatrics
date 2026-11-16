@@ -4,10 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Resources | Greater Hartford Pediatrics</title>
-<meta name="description" content="Greater Hartford Pediatrics, 465 Silas Deane Highway, Wethersfield, CT. Compassionate pediatric care for children from newborn through age 21. Call 860-865-3521." />
+<meta name="description" content="Greater Hartford Pediatrics, 465 Silas Deane Highway, Wethersfield, CT. Dr. Latesha Thomas and team care for children from newborn through age 21. Call 860-865-3521." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" type="image/png" href="images/favicon.png" />
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
@@ -15,124 +15,132 @@
 <body>
 <a href="#main" class="skip-link">Skip to main content</a>
 
-<!-- ══ NAV ══════════════════════════════════ -->
-<nav class="site-nav" aria-label="Main">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand" aria-label="Greater Hartford Pediatrics home">
-      <img src="images/logo-horizontal.png" alt="Greater Hartford Pediatrics" />
-    </a>
+<header class="masthead">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Greater Hartford Pediatrics home"><img src="images/logo-horizontal.png" alt="Greater Hartford Pediatrics" /></a>
+    <div class="contact-blocks">
+      <div class="cblock hide-md">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><small>Office open Mon–Fri, 8am–5pm</small><strong>Dr. Thomas: Mon, Wed &amp; Fri, 8:15am–4:30pm</strong></div>
+      </div>
+      <a class="cblock" href="tel:+18608653521">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        <div><small>Give us a call</small><strong>860-865-3521</strong></div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar" aria-label="Main">
+  <div class="wrap">
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
+      <li><a href="info.html">Info</a></li>
       <li><a href="resources.html" aria-current="page">Resources</a></li>
       <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="https://portal.letsdevelo.com/ghpediatrics" class="portal-link" target="_blank" rel="noopener noreferrer">Patient Portal</a></li>
     </ul>
+    <div class="nav-cta">
+      <a href="tel:+18608653521" class="hide-sm">Call 860-865-3521</a>
+      <a href="https://portal.letsdevelo.com/ghpediatrics" target="_blank" rel="noopener noreferrer">Patient Portal</a>
+    </div>
   </div>
 </nav>
 
 <main id="main">
-<section id="page-resources" data-page="resources" aria-label="Resources">
-  <div class="hero page-hero">
-    <div class="hero-inner">
-      <span class="section-label">Family resources</span>
-      <h1>Trusted Information for Parents and Young People</h1>
-      <p class="hero-sub" style="margin-bottom:0;">We’ve gathered reliable websites and guides from pediatric experts. Each link opens in a new tab.</p>
-      <div class="res-nav" aria-label="Jump to a resource section">
-        <a href="#health">Health</a>
-        <a href="#vaccines">Vaccines</a>
-        <a href="#safety">Safety</a>
-        <a href="#adolescent">Adolescent / Young Adult</a>
-        <a href="#breastfeeding">Breastfeeding</a>
+<div>
+  <div class="page-title"><div class="wrap"><h1>Resources</h1><p>Trusted websites and guides from pediatric experts. Each link opens in a new tab.</p>
+    <div class="res-jump"><a href="#health">Health</a><a href="#vaccines">Vaccines</a><a href="#safety">Safety</a><a href="#adolescent">Adolescent / Young Adult</a><a href="#breastfeeding">Breastfeeding</a></div>
+  </div></div>
+
+  <section>
+    <div class="wrap">
+      <div class="crisis"><strong>In a mental health crisis?</strong> Call or text <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">988</a> to reach the 988 Suicide &amp; Crisis Lifeline, any time of day or night. For a medical emergency, call 911.</div>
+
+      <div class="res-group" id="health">
+        <h2>Health Resources</h2>
+        <p>Everyday health information from the American Academy of Pediatrics and other trusted organizations.</p>
+        <ul class="res-list">
+          <li><a href="https://www.healthychildren.org/English/Pages/default.aspx" target="_blank" rel="noopener noreferrer">HealthyChildren.org</a><span>The AAP’s parenting website, covering health topics from pregnancy through young adulthood.</span></li>
+          <li><a href="https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Symptom Checker</a><span>What to do when your child is sick or hurt, and when to call the doctor.</span></li>
+          <li><a href="https://publications.aap.org/patiented/pages/Well-Child-Visit-Handouts" target="_blank" rel="noopener noreferrer">Well-Child Visit Handouts</a><span>Age-by-age guidance on what to expect at each check-up.</span></li>
+          <li><a href="https://allergyasthmanetwork.org/" target="_blank" rel="noopener noreferrer">Allergy &amp; Asthma Network</a><span>Education and support for families managing allergies and asthma.</span></li>
+          <li><a href="https://www.healthychildren.org/English/family-life/Media/Pages/follow-pediatricians-for-trustworthy-content-on-childrens-health.aspx" target="_blank" rel="noopener noreferrer">Trustworthy Health Content on Social Media</a><span>How to find reliable pediatricians to follow online.</span></li>
+        </ul>
       </div>
+
+      <div class="res-group" id="vaccines">
+        <h2>Vaccine Resources</h2>
+        <p>Schedules and science-based answers to common vaccine questions.</p>
+        <ul class="res-list">
+          <li><a href="https://downloads.aap.org/AAP/PDF/AAP-Immunization-Schedule.pdf" target="_blank" rel="noopener noreferrer">AAP Immunization Schedule</a><span>The recommended vaccine schedule from birth through age 18. <em>PDF</em></span></li>
+          <li><a href="https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Vaccine-Safety-The-Facts.aspx" target="_blank" rel="noopener noreferrer">Vaccine Safety: The Facts</a><span>Clear answers about how vaccines are tested and monitored for safety.</span></li>
+        </ul>
+      </div>
+
+      <div class="res-group" id="safety">
+        <h2>Safety Resources</h2>
+        <p>Car seat guidance to keep your child safe on every ride.</p>
+        <ul class="res-list">
+          <li><a href="https://ctsafekids.org/safety-information/passenger-safety/" target="_blank" rel="noopener noreferrer">Passenger Safety in Connecticut</a><span>Connecticut car seat guidance and help finding a car seat inspection.</span></li>
+          <li><a href="https://appleseedpediatrics.com/wp-content/uploads/2021/10/NHTSA-Car-Seat-Saftey-Recommendations.pdf" target="_blank" rel="noopener noreferrer">Car Seat Recommendations by Age</a><span>Choosing the right car seat as your child grows (NHTSA). <em>PDF</em></span></li>
+        </ul>
+      </div>
+
+      <div class="res-group" id="adolescent">
+        <h2>Adolescent / Young Adult Resources</h2>
+        <p>Reliable health information written for teens and young adults.</p>
+        <ul class="res-list">
+          <li><a href="https://youngwomenshealth.org/" target="_blank" rel="noopener noreferrer">Center for Young Women’s Health</a><span>Health guides for teen girls and young women, from Boston Children’s Hospital.</span></li>
+          <li><a href="https://youngmenshealthsite.org/" target="_blank" rel="noopener noreferrer">Young Men’s Health</a><span>Health guides for teen boys and young men, from Boston Children’s Hospital.</span></li>
+          <li><a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">988 Suicide &amp; Crisis Lifeline</a><span>Free, confidential support 24/7 by call, text, or chat.</span></li>
+        </ul>
+      </div>
+
+      <div class="res-group" id="breastfeeding">
+        <h2>Breastfeeding</h2>
+        <p>Support for nursing parents and answers about medications during pregnancy and breastfeeding.</p>
+        <ul class="res-list">
+          <li><a href="https://hartfordhealthcare.org/health-wellness/health-resources/health-library/detail?id=acl4105&amp;lang=en-us" target="_blank" rel="noopener noreferrer">Breastfeeding Health Library</a><span>Practical breastfeeding information for new parents, from Hartford HealthCare.</span></li>
+          <li><a href="https://mothertobaby.org/" target="_blank" rel="noopener noreferrer">MotherToBaby</a><span>Expert answers about medications and exposures during pregnancy and breastfeeding.</span></li>
+          <li><a href="https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Breastfeeding Basics</a><span>Pediatrician guidance on getting started, positioning, milk supply, and more.</span></li>
+          <li><a href="https://www.breastfeedingct.org/uploads/6/2/8/1/62815511/breastfeeding_flyer_english.pdf" target="_blank" rel="noopener noreferrer">Connecticut Breastfeeding Support Flyer</a><span>Local breastfeeding help and resources for Connecticut families. <em>PDF, English</em></span></li>
+          <li lang="es"><a href="https://www.breastfeedingct.org/uploads/6/2/8/1/62815511/breastfeeding_flyer_spanish.pdf" target="_blank" rel="noopener noreferrer">Folleto de apoyo a la lactancia</a><span>Ayuda y recursos de lactancia para familias en Connecticut. <em>PDF, español</em></span></li>
+          <li><a href="https://firstdroplets.com" target="_blank" rel="noopener noreferrer">First Droplets</a><span>Videos and tips on hand expression and colostrum in the first days after birth.</span></li>
+          <li><a href="https://kellymom.com/" target="_blank" rel="noopener noreferrer">KellyMom</a><span>Evidence-based answers to common breastfeeding and parenting questions.</span></li>
+        </ul>
+      </div>
+
+      <p class="note">These resources are for general education and do not replace advice from your child’s doctor. If you have questions about your child’s health, please call our office.</p>
     </div>
-  </div>
-
-  <div class="res-body">
-
-    <div class="crisis" role="note">
-      <span aria-hidden="true" style="font-size:1.4rem;">💜</span>
-      <p><strong>In a mental health crisis?</strong> Call or text <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">988</a> to reach the 988 Suicide &amp; Crisis Lifeline, any time of day or night. For a medical emergency, call 911.</p>
-    </div>
-
-    <section class="res-section" id="health" aria-labelledby="h-health">
-      <div class="res-head"><div class="svc-icon" aria-hidden="true">🩺</div><h2 id="h-health">Health Resources</h2></div>
-      <p class="res-intro">Everyday health information from the American Academy of Pediatrics and other trusted organizations.</p>
-      <ul class="res-list">
-        <li><a class="res-link" href="https://www.healthychildren.org/English/Pages/default.aspx" target="_blank" rel="noopener noreferrer"><strong>HealthyChildren.org</strong><span>The AAP’s parenting website, covering health topics from pregnancy through young adulthood.</span><span class="src">American Academy of Pediatrics</span></a></li>
-        <li><a class="res-link" href="https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/default.aspx" target="_blank" rel="noopener noreferrer"><strong>Symptom Checker</strong><span>Find out what to do when your child is sick or hurt, and when to call the doctor.</span><span class="src">HealthyChildren.org</span></a></li>
-        <li><a class="res-link" href="https://publications.aap.org/patiented/pages/Well-Child-Visit-Handouts" target="_blank" rel="noopener noreferrer"><strong>Well-Child Visit Handouts</strong><span>Age-by-age guidance on what to expect at each check-up.</span><span class="src">AAP Patient Education</span></a></li>
-        <li><a class="res-link" href="https://allergyasthmanetwork.org/" target="_blank" rel="noopener noreferrer"><strong>Allergy &amp; Asthma Network</strong><span>Education and support for families managing allergies and asthma.</span><span class="src">allergyasthmanetwork.org</span></a></li>
-        <li><a class="res-link" href="https://www.healthychildren.org/English/family-life/Media/Pages/follow-pediatricians-for-trustworthy-content-on-childrens-health.aspx" target="_blank" rel="noopener noreferrer"><strong>Trustworthy Health Content on Social Media</strong><span>How to find reliable pediatricians to follow online.</span><span class="src">HealthyChildren.org</span></a></li>
-      </ul>
-    </section>
-
-    <section class="res-section" id="vaccines" aria-labelledby="h-vaccines">
-      <div class="res-head"><div class="svc-icon" aria-hidden="true">💉</div><h2 id="h-vaccines">Vaccine Resources</h2></div>
-      <p class="res-intro">Schedules and science-based answers to common vaccine questions.</p>
-      <ul class="res-list">
-        <li><a class="res-link" href="https://downloads.aap.org/AAP/PDF/AAP-Immunization-Schedule.pdf" target="_blank" rel="noopener noreferrer"><strong>AAP Immunization Schedule</strong><span>The recommended vaccine schedule from birth through age 18 (PDF).</span><span class="src">American Academy of Pediatrics</span></a></li>
-        <li><a class="res-link" href="https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Vaccine-Safety-The-Facts.aspx" target="_blank" rel="noopener noreferrer"><strong>Vaccine Safety: The Facts</strong><span>Clear answers about how vaccines are tested and monitored for safety.</span><span class="src">HealthyChildren.org</span></a></li>
-      </ul>
-    </section>
-
-    <section class="res-section" id="safety" aria-labelledby="h-safety">
-      <div class="res-head"><div class="svc-icon" aria-hidden="true">🚗</div><h2 id="h-safety">Safety Resources</h2></div>
-      <p class="res-intro">Car seat guidance to keep your child safe on every ride.</p>
-      <ul class="res-list">
-        <li><a class="res-link" href="https://ctsafekids.org/safety-information/passenger-safety/" target="_blank" rel="noopener noreferrer"><strong>Passenger Safety in Connecticut</strong><span>Connecticut car seat guidance and help finding a car seat inspection.</span><span class="src">Safe Kids Connecticut</span></a></li>
-        <li><a class="res-link" href="https://appleseedpediatrics.com/wp-content/uploads/2021/10/NHTSA-Car-Seat-Saftey-Recommendations.pdf" target="_blank" rel="noopener noreferrer"><strong>Car Seat Recommendations by Age</strong><span>Choosing the right car seat as your child grows (PDF).</span><span class="src">NHTSA</span></a></li>
-      </ul>
-    </section>
-
-    <section class="res-section" id="adolescent" aria-labelledby="h-adolescent">
-      <div class="res-head"><div class="svc-icon" aria-hidden="true">🤝</div><h2 id="h-adolescent">Adolescent / Young Adult Resources</h2></div>
-      <p class="res-intro">Reliable health information written for teens and young adults.</p>
-      <ul class="res-list">
-        <li><a class="res-link" href="https://youngwomenshealth.org/" target="_blank" rel="noopener noreferrer"><strong>Center for Young Women’s Health</strong><span>Health guides for teen girls and young women.</span><span class="src">Boston Children’s Hospital</span></a></li>
-        <li><a class="res-link" href="https://youngmenshealthsite.org/" target="_blank" rel="noopener noreferrer"><strong>Young Men’s Health</strong><span>Health guides for teen boys and young men.</span><span class="src">Boston Children’s Hospital</span></a></li>
-        <li><a class="res-link" href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer"><strong>988 Suicide &amp; Crisis Lifeline</strong><span>Free, confidential support 24/7 by call, text, or chat.</span><span class="src">988lifeline.org</span></a></li>
-      </ul>
-    </section>
-
-    <section class="res-section" id="breastfeeding" aria-labelledby="h-breastfeeding">
-      <div class="res-head"><div class="svc-icon" aria-hidden="true">🍼</div><h2 id="h-breastfeeding">Breastfeeding</h2></div>
-      <p class="res-intro">Support for nursing parents and answers about medications during pregnancy and breastfeeding.</p>
-      <ul class="res-list">
-        <li><a class="res-link" href="https://hartfordhealthcare.org/health-wellness/health-resources/health-library/detail?id=acl4105&amp;lang=en-us" target="_blank" rel="noopener noreferrer"><strong>Breastfeeding Health Library</strong><span>Practical breastfeeding information for new parents.</span><span class="src">Hartford HealthCare</span></a></li>
-        <li><a class="res-link" href="https://mothertobaby.org/" target="_blank" rel="noopener noreferrer"><strong>MotherToBaby</strong><span>Expert answers about medications and exposures during pregnancy and breastfeeding.</span><span class="src">mothertobaby.org</span></a></li>
-        <li><a class="res-link" href="https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/default.aspx" target="_blank" rel="noopener noreferrer"><strong>Breastfeeding Basics</strong><span>Pediatrician guidance on getting started, positioning, milk supply, and more.</span><span class="src">HealthyChildren.org</span></a></li>
-        <li><a class="res-link" href="https://www.breastfeedingct.org/uploads/6/2/8/1/62815511/breastfeeding_flyer_english.pdf" target="_blank" rel="noopener noreferrer"><strong>Connecticut Breastfeeding Support Flyer</strong><span>Local breastfeeding help and resources for Connecticut families (PDF, English).</span><span class="src">breastfeedingct.org</span></a></li>
-        <li><a class="res-link" href="https://www.breastfeedingct.org/uploads/6/2/8/1/62815511/breastfeeding_flyer_spanish.pdf" target="_blank" rel="noopener noreferrer" lang="es"><strong>Folleto de apoyo a la lactancia</strong><span>Ayuda y recursos de lactancia para familias en Connecticut (PDF, español).</span><span class="src">breastfeedingct.org</span></a></li>
-        <li><a class="res-link" href="https://firstdroplets.com" target="_blank" rel="noopener noreferrer"><strong>First Droplets</strong><span>Videos and tips on hand expression and colostrum in the first days after birth.</span><span class="src">firstdroplets.com</span></a></li>
-        <li><a class="res-link" href="https://kellymom.com/" target="_blank" rel="noopener noreferrer"><strong>KellyMom</strong><span>Evidence-based answers to common breastfeeding and parenting questions.</span><span class="src">kellymom.com</span></a></li>
-      </ul>
-    </section>
-
-    <p class="disclaimer">These resources are for general education and do not replace advice from your child’s doctor. If you have questions about your child’s health, please contact our office.</p>
-  </div>
-</section>
+  </section>
+</div>
 </main>
 
-<!-- ══ FOOTER ══════════════════════════════ -->
 <footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <strong>Greater Hartford Pediatrics</strong>
-      <span>Compassionate pediatric care for Greater Hartford families</span>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h3>Greater Hartford Pediatrics</h3>
+        <p>An independent pediatric practice caring for newborns, children, teens, and young adults in Wethersfield and across Greater Hartford.</p>
+      </div>
+      <div>
+        <h3>Visit Us</h3>
+        <p>465 Silas Deane Highway<br />Wethersfield, CT 06109<br />Phone: <a href="tel:+18608653521">860-865-3521</a><br />Fax: 860-865-3596<br />Office hours: Mon–Fri, 8am–5pm<br />Dr. Thomas: Mon, Wed &amp; Fri, 8:15am–4:30pm</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="info.html">Patient Information</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="https://portal.letsdevelo.com/ghpediatrics" target="_blank" rel="noopener noreferrer">Patient Portal</a></li>
+        </ul>
+      </div>
     </div>
-    <nav class="footer-links" aria-label="Footer">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="resources.html">Resources</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="https://portal.letsdevelo.com/ghpediatrics" target="_blank" rel="noopener noreferrer">Patient Portal</a>
-    </nav>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Greater Hartford Pediatrics. All rights reserved.</span>
-    <span>465 Silas Deane Highway, Wethersfield, CT 06109 &nbsp;|&nbsp; Phone: <a href="tel:+18608653521" style="color:rgba(255,255,255,.85);">860-865-3521</a> &nbsp;|&nbsp; Fax: 860-865-3596</span>
+    <div class="copy">© 2026 Greater Hartford Pediatrics. All rights reserved.</div>
   </div>
 </footer>
 
